@@ -1,0 +1,35 @@
+{
+    "name": "noud/laravel-seo-google-structured-data",
+    "require": {
+        "php": ">=7.2.0",
+        "noud/laravel-seo-google-indexing-api": "^1.0",
+        "noud/laravel-seo-schema-org": "^1.0"
+    },
+    "description": "Laravel SEO Google Structured data",
+    "type": "library",
+    "require-dev": {
+        "noud/schema": "dev-master",
+        "noud/schema-builder": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Noud de Brouwer",
+            "email": "noud4@home.nl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "SEO\\Google\\Structured\\data\\": "src/app/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SEO\\Google\\Structured\\data\\Providers\\GoogleStructureddataServiceProvider"
+            ]
+        }
+    }
+}
